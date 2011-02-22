@@ -1,0 +1,69 @@
+body, html {
+    margin:0;
+    padding:0;
+    border:0;			/* This removes the border around the viewport in old versions of IE */
+    width:100%;
+    background-color: #333;
+    min-width:600px;
+
+}
+
+a { color: #FFF; font-family: "Verdana", Helvetica, Arial, sans-serif; font-size: 14px; }
+
+a:hover { color: #00ccff; font-family: "Verdana", Helvetica, Arial, sans-serif; }
+
+a:visited { color: #FFF; }
+
+
+
+body, p, ol, ul, td {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size:   13px;
+    line-height: 18px;
+
+}
+
+
+img
+{  border-style: none;
+}
+
+
+
+#top-div {
+    width: 100%;
+    height: 175px;
+    background: url("../images/top_div.png" ) repeat-x top right;
+    background-color: #fff;
+
+}
+
+#top-container {
+    margin: 0 auto;
+    width: 960px;
+    height: 175px;
+
+}
+
+.login-box {
+    float:right;
+    
+
+}
+
+.login-box li {
+    list-style: none;
+
+}
+
+
+#main-container {
+    margin: 0 auto;
+    width: 960px;
+    height:auto;
+    padding: 5px 5px 5px 5px;
+
+
+}
+
+#main-container h1, h2, p {color: #fff;}

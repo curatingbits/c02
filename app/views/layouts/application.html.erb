@@ -7,6 +7,11 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
+
+  <div id="top-div">
+    <div id="top-container">
+        <img src="../images/logo">
+        <div class="login-box">
 <% if user_signed_in? %>
   <li>
   <%= link_to('Logout', destroy_user_session_path) %>        
@@ -16,10 +21,22 @@
   <%= link_to('Login', new_user_session_path)  %>  
   </li>
 <% end %>
+  <% if user_signed_in? %>
+  <li>
+  <%= link_to('Edit registration', edit_user_registration_path) %>
+  </li>
+<% else %>
+  <li>
+  <%= link_to('Register', new_user_registration_path)  %>
+  </li>
+<% end %>
+        </div>
+    </div>
+</div>
 
-
+  <div id="main-container">
 
 <%= yield %>
-
+  </div>
 </body>
 </html>
