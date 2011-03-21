@@ -1,4 +1,8 @@
 C02::Application.routes.draw do
+  devise_for :admins
+
+  resources :skits
+
 root :to => "home#index"
 
   devise_for :users

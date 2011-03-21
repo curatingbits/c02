@@ -1,0 +1,30 @@
+<h1>Listing skits</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Date ended</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @skits.each do |skit| %>
+  <tr>
+    <td><%= skit.title %></td>
+    <td><%= skit.description %></td>
+    <td><%= skit.date_ended %></td>
+     <% if admin_signed_in? %>
+    <td><%= link_to 'Show', skit %></td>
+    <td><%= link_to 'Edit', edit_skit_path(skit) %></td>
+    <td><%= link_to 'Destroy', skit, :confirm => 'Are you sure?', :method => :delete %></td>
+    <%end%>  
+</tr>
+<% end %>
+</table>
+
+<br />
+ <% if admin_signed_in? %>
+<%= link_to 'New Skit', new_skit_path %>
+<%end%>

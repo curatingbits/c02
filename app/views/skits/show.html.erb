@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @skit.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @skit.description %>
+</p>
+
+<p>
+  <b>Date ended:</b>
+  <%= @skit.date_ended %>
+</p>
+
+
+<%= link_to 'Edit', edit_skit_path(@skit) %> |
+<%= link_to 'Back', skits_path %>
