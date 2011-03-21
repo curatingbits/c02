@@ -1,9 +1,9 @@
 xml.instruct!
-xml.posts do
-  @skits.each do |post|
-    xml.post do
-      xml.title post.title
-      xml.description post.description
+xml.skits do
+  @skits.each do |skit|
+    xml.skit do
+      xml.title skit.title
+      xml.description skit.description
     end
     end
   end
