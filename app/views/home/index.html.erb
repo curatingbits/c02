@@ -1,2 +1,88 @@
-<h1>unc02 software</h1>
-<p>Uncarbonated Software is an iOS app development firm headquartered in Oklahoma City.</p>
+<div class="slider">
+<a class="backward">prev</a>
+
+<!-- container for the slides -->
+<div class="images">
+
+	<!-- first slide -->
+	<div>
+		<h3>Tminus App</h3>
+
+		<img src="../images/iphonecover.png" alt="Flying screens" style="float:left;margin:0 30px 20px 0" />
+
+		<p style="font-weight:bold">
+
+			Keep Timers simple
+		</p>
+
+		<p>
+			Create a list of memorable timers and share your favorite countdowns with friends and family. 
+			</br></br><img src="../images/icon.png" > Download T- in the appstore now.</img>
+		</p>
+
+	</div>
+
+	<!-- second slide -->
+	<div>
+
+		<h3>Create</h3>
+
+
+		<img src="../images/iphonecoverb.png" alt="Flying screens" style="float:left;margin:0 30px 20px 0" />
+
+		<p style="font-weight:bold">
+			Creating timers is easy...
+		</p>
+
+		<p>
+			Create and customize each one of your countdowns with a background. 
+		</p>
+
+	</div>
+
+	<!-- third slide -->
+	<div>
+		<h3>Share</h3>
+			<img src="../images/iphonecoverc.png" alt="Flying screens" style="float:left;margin:0 30px 20px 0" />
+		<p style="font-weight:bold">
+			Share your countdowns with the world.
+		</p>
+
+		<p>
+			After you create your timer easily share it with friends, family, or on twitter. 
+		</p>
+	</div>
+
+</div>
+
+<!-- "next slide" button -->
+<a class="forward">next</a><p>
+
+<!-- the tabs -->
+<div class="slidetabs">
+	<a href="#"></a>
+
+	<a href="#"></a>
+	<a href="#"></a>
+</div>
+
+</div>
+
+</div>
+<script language="JavaScript">
+// What is $(document).ready ? See: http://flowplayer.org/tools/documentation/basics.html#document_ready
+$(function() {
+
+$(".slidetabs").tabs(".images > div", {
+
+	// enable "cross-fading" effect
+	effect: 'fade',
+	fadeOutSpeed: "slow",
+
+	// start from the beginning after the last tab
+	rotate: true
+
+// use the slideshow plugin. It accepts its own configuration
+}).slideshow();
+});
+</script>
