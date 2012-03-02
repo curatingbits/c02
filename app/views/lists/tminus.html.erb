@@ -1,10 +1,19 @@
 
- <ul data-role="listview" data-dividertheme="e">
-<% @lists.each do |list| %>    
-    <li><a href="<%= list.link %>" rel="external"><%= list.title %></a>  
-	    <p class="ui-li-aside"><strong><%= list.date%></strong></p>
-	
+ <ul data-role="listview" data-dividertheme="e">   
+<% @lists.each do |list| %>     
+		<li><a href="<%= list.link %>" rel="external" data-ajax="false"><%= list.title %> 
+	    <p class="ui-li-aside"><strong><%= list.date%></strong></p></a> 
+<% end %> 	
 	</li>
-<% end %> 
    </ul>
+
+<script>
+
+$("li").click(function(){
+     window.location=$(this).find("a").attr("href");
+     return false;
+});
+
+</script>
+
 
