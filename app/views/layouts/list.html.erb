@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.css" />  
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.js"></script>
+	  <%= csrf_meta_tag %>
+	
+	</head>
+
+	<body>
+
+		<div data-role="page" data-theme="a">
+		        <div data-role="header" data-theme="a">
+		            <h1>tminus upcoming countdowns</h1>
+		        </div>
+		        <div data-role="content">
+		        <%= yield %>
+		        </div>
+		        <div data-role="footer" data-position="fixed">
+		   
+		        </div>
+		    </div>
+
+	</body>
+	</html>

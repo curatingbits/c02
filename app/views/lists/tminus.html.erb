@@ -1,0 +1,6 @@
+<% @lists.each do |list| %>
+ <ul data-role="listview" data-dividertheme="e">
+        <li><a href="<%= list.link %>" rel="external"><%= list.title %></a></li>
+    </ul>
+
+<% end %>

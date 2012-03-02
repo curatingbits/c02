@@ -10,7 +10,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110321182616) do
+ActiveRecord::Schema.define(:version => 20120302212840) do
+
+  create_table "admin_slides", :force => true do |t|
+    t.string   "title"
+    t.string   "header"
+    t.text     "descriptioin"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "admins", :force => true do |t|
     t.string   "email",                               :default => "", :null => false
@@ -25,6 +33,14 @@ ActiveRecord::Schema.define(:version => 20110321182616) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "lists", :force => true do |t|
+    t.string   "title"
+    t.date     "date"
+    t.string   "link"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

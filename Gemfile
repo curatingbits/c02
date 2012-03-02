@@ -3,6 +3,7 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.3'
 
 gem 'devise'
+gem "paperclip", "~> 2.0"
 
 
 # Bundle edge Rails instead:

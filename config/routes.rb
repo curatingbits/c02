@@ -1,11 +1,17 @@
 C02::Application.routes.draw do
-  devise_for :admins
+
+  resources :lists do
+    collection do
+      get :tminus
+    end
+  end
 
   resources :skits
 
 root :to => "home#index"
 
   devise_for :users
+  devise_for :admins
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
