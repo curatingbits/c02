@@ -1,4 +1,7 @@
-
+<div data-role="header">
+  <h1>Popular Countdowns</h1>
+</div>
+<div data-role="content">
  <ul data-role="listview" data-dividertheme="e">   
 <% @lists.each do |list| %>     
 		<li><a href="<%= list.link %>" rel="external" data-ajax="false"><%= list.title %> 
@@ -6,7 +9,7 @@
 <% end %> 	
 	</li>
    </ul>
-
+</div>
 <script>
 
 $("li").click(function(){
