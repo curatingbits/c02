@@ -1,9 +1,10 @@
-<% @lists.each do |list| %>
+
  <ul data-role="listview" data-dividertheme="e">
-        <li><a href="<%= list.link %>" rel="external"><%= list.title %></a>  
-	    <p class="ui-li-aside"><strong><%= list.date%></strong>PM</p>
+<% @lists.each do |list| %>    
+    <li><a href="<%= list.link %>" rel="external"><%= list.title %></a>  
+	    <p class="ui-li-aside"><strong><%= list.date%></strong></p>
 	
 	</li>
-    </ul>
+<% end %> 
+   </ul>
 
-<% end %>
