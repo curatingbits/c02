@@ -11,19 +11,21 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :title %><br />
+<div data-role="fieldcontain">
+     <label for="basic">Title:</label>
     <%= f.text_field :title %>
   </div>
-  <div class="field">
-    <%= f.label :date %><br />
+<div data-role="fieldcontain">
+     <label for="basic">Date:</label>
     <%= f.date_select :date %>
   </div>
-  <div class="field">
-    <%= f.label :link %><br />
+<div data-role="fieldcontain">
+     <label for="basic">Link:</label>
     <%= f.text_field :link %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+<div class="ui-body ui-body-a">
+		<fieldset class="ui-grid-a">
+    <%= f.submit :class => 'ui-block-a' %>
+</fieldset>
   </div>
 <% end %>

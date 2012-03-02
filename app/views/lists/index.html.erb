@@ -1,26 +1,18 @@
-<h1>Listing lists</h1>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Date</th>
-    <th>Link</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div data-role="header">
+  <h1>Listing posts</h1>
+<%= link_to 'Add', new_list_path, "data-icon" => "plus", "class" => "ui-btn-right" %>
+</div>
+ 
+<div data-role="content">
+  <ul data-role="listview">
+    <% @lists.each do |list| %>
+    <li>
+      <%= link_to list.title, list %>
+      <%= link_to 'edit countdown', edit_list_path(list), "data-icon" => "gear" %>
+    </li>
+    <% end %>
+  </ul>
+</div>
 
-<% @lists.each do |list| %>
-  <tr>
-    <td><%= list.title %></td>
-    <td><%= list.date %></td>
-    <td><%= list.link %></td>
-    <td><%= link_to 'Show', list %></td>
-    <td><%= link_to 'Edit', edit_list_path(list) %></td>
-    <td><%= link_to 'Destroy', list, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-<br />
 
-<%= link_to 'New List', new_list_path %>
