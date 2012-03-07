@@ -1,19 +1,3 @@
-// Place your application-specific JavaScript functions and classes here
-// This file is automatically included by javascript_include_tag :defaults
-$(document).ready(function(){
-  $(".tweet").tweet({
-    username: "so6ix",
-    join_text: "auto",
-    avatar_size: 32,
-    count: 3,
-    auto_join_text_default: "we said,",
-    auto_join_text_ed: "we",
-    auto_join_text_ing: "we were",
-    auto_join_text_reply: "we replied to",
-    auto_join_text_url: "we were checking out",
-    loading_text: "loading tweets..."
-  });
-});
 (function($) {
  
   $.fn.tweet = function(o){

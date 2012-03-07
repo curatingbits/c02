@@ -15,7 +15,7 @@
 			Keep Timers simple
 		</p>
 
-		<p>
+		<p clas="co_font">
 			Create a list of timers and share your favorite countdowns with friends and family. Tminus allows you to create as many countdowns for all the special upcoming events in your life. 
 			</br></br><img src="../images/icon.png" > Download T- in the appstore now.</img>
 		</p>
@@ -68,7 +68,16 @@
 
 </div>
 
-</div>
+
+
+
+
+
+
+
+
+
+
 <script language="JavaScript">
 // What is $(document).ready ? See: http://flowplayer.org/tools/documentation/basics.html#document_ready
 $(function() {
@@ -85,4 +94,20 @@ $(".slidetabs").tabs(".images > div", {
 // use the slideshow plugin. It accepts its own configuration
 }).slideshow();
 });
+
+    $(document).ready(function(){
+      $(".tweet").tweet({
+        username: "uncarbonatedsw",
+        join_text: "auto",
+        avatar_size: 32,
+        count: 3,
+        auto_join_text_default: "we said,",
+        auto_join_text_ed: "we",
+        auto_join_text_ing: "we were",
+        auto_join_text_reply: "we replied to",
+        auto_join_text_url: "we were checking out",
+        loading_text: "loading tweets..."
+      });
+    });
+
 </script>

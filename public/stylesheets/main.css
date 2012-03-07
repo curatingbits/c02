@@ -3,7 +3,7 @@ body, html {
     padding:0;
     border:0;			/* This removes the border around the viewport in old versions of IE */
     width:100%;
-    background-color: #333;
+  	background: url("../images/chalk.jpg");
     min-width:600px;
 
 }
@@ -23,6 +23,7 @@ body, p, ol, ul, td {
     line-height: 18px;
 
 }
+
 
 
 img
@@ -46,6 +47,11 @@ img
 
 }
 
+.top-right-box {
+	float: right;
+	
+}
+
 .login-box {
     float:right;
     
@@ -59,6 +65,7 @@ img
 
 #main-container-wrapper {
 	width: 100%;
+	background: url("../images/spotlightbakc.jpg");
 	background-color: #eee;
 	
 }
@@ -68,10 +75,97 @@ img
     width: 960px;
     height:auto;
     padding: 5px 5px 5px 5px;
-	background-color: #eee;
+
 
 
 }
+
+#bot_container {
+	margin: 0 auto;
+	width: 960px;
+
+	height: auto;	
+}
+
+.hilight
+{
+	font-family: "AvantGuardSW-Bold","Arial Black",Verdana,sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 16px;
+	color: #444444;
+	letter-spacing: 1px;
+
+}
+
+*, :active, :focus
+
+{
+
+outline-color: -moz-use-text-color;
+outline-style: none;
+outline-width: 0px;
+
+}
+
+#bot_container p, ul, blockquote
+
+{
+
+margin-top: 20px;
+
+margin-bottom: 20px;
+
+}
+
+#bot_container p
+
+{
+	color: #aaaaaa;
+	font-size: 15px;
+	line-height: 26px;
+
+}
+
+#bot_container img
+	{
+	vertical-align: text-top;
+	padding: 3px;
+	padding-left: 10px;
+	}
+
+#bot_container .bot_container_left p
+
+{
+
+color: #aaaaaa;
+font-size: 16px;
+line-height: 26px;
+text-shadow: #000000;
+margin-top: 4px;
+
+}
+
+
+.bot_container_left {
+	width: 270px;
+	float: left;
+	padding: 8px;
+	margin-top: 15px;
+	
+}
+
+.bot_container_left_middle {
+	width: 360px;
+	float: left;
+	padding: 8px;
+	margin-left:4px;
+	border-left: 1px solid #222;
+	border-right: 1px solid #222;
+	margin-top: 15px;
+	
+}
+
 
 .slider {
 	
@@ -116,7 +210,7 @@ img
 	margin:7px;
 	padding:15px 30px 15px 15px;
 	height:256px;
-	font-size:12px;
+
 }
 
 /* header */
@@ -125,6 +219,15 @@ img
 	font-weight:normal;
 	margin:0 0 20px 0;
 	color:#456;
+}
+
+.images p {
+	
+	color: #aaaaaa;
+	font-size: 16px;
+	line-height: 18px;
+	text-shadow: #000000;
+	margin-top: 4px;
 }
 
 /* tabs (those little circles below slides) */
@@ -159,7 +262,7 @@ img
 .forward, .backward {
 	float:left;
 	margin-top:140px;
-	background:#fff url(../images/hori_large.png) no-repeat;
+	background: url(../images/hori_large.png) no-repeat;
 	display:block;
 	width:30px;
 	height:30px;
@@ -182,3 +285,46 @@ img
 .disabled {
 	visibility:hidden !important;		
 }
+
+
+
+.bottom_container_left .tweet {
+	color: #aaaaaa;
+	font-size: 18px;
+	line-height: 26px;
+	text-shadow: #000000;
+	margin-top: 4px;
+	
+}
+
+.tweet, .query {
+	color: #aaaaaa;
+	font-size: 18px;
+	line-height: 26px;
+	text-shadow: #000000;
+	margin-top: 4px;
+ }
+  .tweet .tweet_list, .query .tweet_list {
+    -webkit-border-radius: .5em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   }
+    .tweet .tweet_list .awesome, .tweet .tweet_list .epic, .query .tweet_list .awesome, .query .tweet_list .epic {
+      text-transform: uppercase; }
+    .tweet .tweet_list li, .query .tweet_list li {
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding: .5em;
+	font-size: 14px;
+	line-height: 18px;
+	text-shadow: #000000; }
+      .tweet .tweet_list li a, .query .tweet_list li a {
+        color: #FFF; }
+    .tweet .tweet_list .tweet_even, .query .tweet_list .tweet_even {
+      background-color: #000; }
+    .tweet .tweet_list .tweet_avatar, .query .tweet_list .tweet_avatar {
+      padding-right: .5em;
+      float: left; }
+      .tweet .tweet_list .tweet_avatar img, .query .tweet_list .tweet_avatar img {
+        vertical-align: middle; }

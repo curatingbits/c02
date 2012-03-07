@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag :all %>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script>
+<%= javascript_include_tag 'jquery.tweet.js' %>
   <%= csrf_meta_tag %>
 
 
@@ -15,6 +16,7 @@
   <div id="top-div">
     <div id="top-container">
         <img src="../images/logo">
+<div class="top-right-box">		<a href="https://twitter.com/#!/uncarbonatedsw/"><img src="../images/followbutton.png"></img></a></div>
 
     </div>
 </div>
@@ -22,7 +24,36 @@
   <div id="main-container">
 
 <%= yield %>
-  </div>
+  </div>	
  </div>
+<div id="bot_container">
+	<div class="bot_container_left">
+	<span class="hilight"> <span class="on">DOWNLOAD</span> and <span class="on">SHARE</span></span>
+	</br>
+	</br>	
+<img src="../images/appstore.png"></img><p>Download and share tminus with your friends</p>	
+</div>
+
+      <div class="bot_container_left_middle">
+ 
+          <span class="hilight"><span class="on">RECENT TWEETS</span></span>
+       
+
+      <div class="tweet"></div>
+
+
+
+           </div> 
+
+			<div class="bot_container_left">
+			<span class="hilight"> <span class="on">About UNCO2</span></span>
+	<p>	Uncarbonated Software is an iOS app development firm headquartered in Oklahoma City.</p>
+
+		 </br><a href="mailto:jake@uncarbonatedsoftware.com"><img src="../images/emailbutton.png"></img></a>
+		</div>
+
+
+</div> 
+
 </body>
 </html>
