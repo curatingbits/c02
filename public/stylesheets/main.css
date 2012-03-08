@@ -186,7 +186,7 @@ margin-top: 4px;
 	background:#fff url(/img/global/gradient/h300.png) repeat-x;
 	border:1px solid #ccc;
 	position:relative;	
-	height:350px;
+	height:470px;
 	
 	width:865px;
 	float:left;	
@@ -263,7 +263,7 @@ margin-top: 4px;
 /* prev and next buttons */
 .forward, .backward {
 	float:left;
-	margin-top:160px;
+	margin-top:230px;
 	background: url(../images/hori_large.png) no-repeat;
 	display:block;
 	width:30px;
