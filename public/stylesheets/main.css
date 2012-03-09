@@ -3,7 +3,7 @@ body, html {
     padding:0;
     border:0;			/* This removes the border around the viewport in old versions of IE */
     width:100%;
-  	background: url("../images/chalk.jpg");
+ 
     min-width:600px;
 
 }
@@ -34,7 +34,7 @@ img
 
 #top-div {
     width: 100%;
-    height: 175px;
+    height: 173px;
     background: url("../images/top_div.png" ) repeat-x top right;
     background-color: #fff;
 
@@ -65,9 +65,15 @@ img
 
 #main-container-wrapper {
 	width: 100%;
+	background-color: #EEE;
 	background: url("../images/spotlightbakc.jpg");
-	background-color: #eee;
-	
+}
+
+#bottom-container-wrapper {
+	width: 100%;
+	background: url("../images/chalk.jpg");
+	height: 400px;
+	border-top: 6px solid #666;
 }
 
 #main-container {
@@ -83,9 +89,12 @@ img
 #bot_container {
 	margin: 0 auto;
 	width: 960px;
-
-	height: auto;	
+	height: auto;
+	
 }
+
+
+
 
 .hilight
 {
@@ -160,12 +169,23 @@ margin-top: 4px;
 	float: left;
 	padding: 8px;
 	margin-left:4px;
-	border-left: 1px solid #222;
-	border-right: 1px solid #222;
+
 	margin-top: 15px;
+	margin-bottom: 15px;
 	
 }
 
+
+.footer_container {
+	
+		border-top: 1px solid #aaa;
+		width: 960px;
+		padding: 3px;
+		clear: both;
+		color: #aaa;
+		text-align: center;
+	
+}
 
 .slider {
 
@@ -175,7 +195,7 @@ margin-top: 4px;
 
 .slider img {
 	vertical-align:text-top;
-	float:right;
+	
 }
 
 #main-container h1, h2, p {color: #666;}
@@ -324,7 +344,7 @@ margin-top: 4px;
       .tweet .tweet_list li a, .query .tweet_list li a {
         color: #FFF; }
     .tweet .tweet_list .tweet_even, .query .tweet_list .tweet_even {
-      background-color: #000; }
+       }
     .tweet .tweet_list .tweet_avatar, .query .tweet_list .tweet_avatar {
       padding-right: .5em;
       float: left; }
