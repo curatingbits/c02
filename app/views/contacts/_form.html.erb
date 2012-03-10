@@ -1,0 +1,21 @@
+<%= simple_form_for(@contact) do |f| %>
+  <% if @contact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+
+      <ul>
+      <% @contact.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+	<%= f.input :name  %>
+    <%= f.input :email %>
+	<%= f.input :reason, :collection =>[['Question', 'Question'],['Advertising', 'Advertising'], ['App Suggestions', 'App Suggestions'], ['Issues', 'Issues'], ['Internships', 'Internships']] %>
+   <%= f.input :body, :label => "Reason of contact:"%>
+  <div class="actions">
+    <%= f.submit "Submit Form" %>
+  </div>
+<% end %>

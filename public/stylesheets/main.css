@@ -350,3 +350,169 @@ margin-top: 4px;
       float: left; }
       .tweet .tweet_list .tweet_avatar img, .query .tweet_list .tweet_avatar img {
         vertical-align: middle; }
+
+
+		/* ----- SimpleForm Styles ----- */
+
+		#page_meta_description  {
+
+		height: 100px;
+		}
+
+		.simple_form div.input {
+		  margin-bottom: 10px;
+
+		}
+
+		.simple_form label {
+		display: block;
+		width: 20%;
+		float: left;
+		font-size: 1.0em;
+		font-weight: bold;
+		color: #5e6469;
+		}
+
+		.simple_form input[type="text"], .simple_form input[type="password"], .simple_form input[type="email"], .simple_form input[type="url"], form input[type="tel"], .simple_form textarea {
+
+		width: 76%;
+		border: 1px solid #c9d0d6;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		font-size: 0.95em;
+		font-family: Helvetica, Arial, sans-serif;
+		outline: none;
+		padding: 8px 10px 7px; 
+
+
+
+		}
+
+		.simple_form
+
+		{
+		border: 0;
+		 padding: 10px;
+		 margin-bottom: 20px;
+		background: #f4f4f4;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		box-shadow: inset 0 1px 4px #dddddd;
+		-moz-box-shadow: inset 0 1px 4px #dddddd;
+		-webkit-box-shadow: inset 0 1px 4px #dddddd;
+
+
+
+
+		}
+
+
+		.simple_form input[type="text"]:focus, .simple_form input[type="password"]:focus, .simple_form input[type="email"]:focus, .simple_form input[type="url"]:focus, .simple_form input[type="tel"]:focus, form textarea:focus
+
+		{
+
+		border: 1px solid #99a2aa;
+		box-shadow: 0 0 4px #99a2aa;
+		-moz-box-shadow: 0 0 4px #99a2aa;
+		-webkit-box-shadow: 0 0 4px #99a2aa;
+
+		}
+		.simple_form input[type='submit'] {
+		background: #838a90;
+		background: -webkit-gradient(linear, left top, left bottom, from(#838a90), to(#414549));
+		  background: -moz-linear-gradient(-90deg, #838a90, #414549);
+		  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#838a90, endColorstr=#414549);
+		  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#838a90, endColorstr=#414549);
+		  -webkit-border-radius: 200px;
+		  -moz-border-radius: 200px;
+		  border-radius: 200px;
+		  text-shadow: black 0 1px 0;
+		  -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.2) inset;
+		  -moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.2) inset;
+		  -ms-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.2) inset;
+		  -o-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.2) inset;
+		  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.2) inset;
+		  border: solid 1px #484e53;
+		  border-color: #484e53;
+		  border-top-color: #616a71;
+		  border-right-color: #484e53;
+		  border-bottom-color: #363b3f;
+		  border-left-color: #484e53;
+		  color: #efefef;
+		  
+		  display: inline-block;
+		  font-weight: bold;
+		  font-size: 1.0em;
+		  font-family: Helvetica, Arial, sans-serif;
+		  line-height: 10px;
+		  margin-left: 800px;
+		  padding: 7px 14px 6px;
+		  text-decoration: none;
+		  -webkit-font-smoothing: antialiased;
+		
+		}
+
+		div.boolean {
+		  margin-left: 180px;
+
+		}
+
+		div.boolean label, label.collection_radio {
+		width: 100%;
+		padding: 5px;
+		text-transform: none !important;
+		font-weight: normal;
+		}
+
+		label.collection_radio {
+		  margin-right: 10px;
+		  vertical-align: -2px;
+		  margin-left:   2px;
+		}
+
+		.field_with_errors {
+		  background-color: #ff3333;
+		}
+
+		.simple_form .error {
+		  clear:   left;
+		  color:   black;
+		  display: block;
+		  margin-left: 120px;
+		  font-size:    12px;
+		}
+
+		.simple_form .hint {
+		  clear: left;
+		  margin-left: 120px;
+		  font-size:    12px;
+		  color: #555;
+		  display: block;
+		  font-style: italic;
+		}
+
+		input.radio {
+		  margin-right: 5px;
+		  vertical-align: -3px;
+		}
+
+		input.check_boxes {
+		  margin-left: 3px;
+		  vertical-align: -3px;
+		}
+
+		label.collection_check_boxes {
+		  float: none;
+		  margin: 0;
+		  vertical-align: -2px;
+		  margin-left:   2px;
+		}
+		
+	
+.thank_you {
+	
+	height: 400px;
+	
+}

@@ -1,5 +1,11 @@
 C02::Application.routes.draw do
 
+  resources :contacts do
+     collection do
+        get :thanks
+      end
+    end
+
   resources :lists do
     collection do
       get :tminus

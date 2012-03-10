@@ -4,6 +4,8 @@ gem 'rails', '3.0.3'
 
 gem 'devise'
 gem "paperclip", "~> 2.0"
+gem 'simple_form'
+
 
 
 # Bundle edge Rails instead:
