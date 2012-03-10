@@ -89,6 +89,7 @@ PLATFORMS
 
 DEPENDENCIES
   devise
+  mail
   paperclip (~> 2.0)
   rails (= 3.0.3)
   simple_form

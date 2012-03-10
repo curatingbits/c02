@@ -45,7 +45,7 @@ class ContactsController < ApplicationController
     respond_to do |format|
       if @contact.save
         ContactMailer.contact_submission(@contact).deliver
-        format.html { redirect_to(:action => 'thanks', :notice => 'Thank you for your interest in UNCO2, we will get back to you soon') }
+        format.html { redirect_to(:action => 'thanks') }
         format.xml  { render :xml => @contact, :status => :created, :location => @contact }
       else
         format.html { render :action => "new" }
@@ -61,7 +61,7 @@ class ContactsController < ApplicationController
 
     respond_to do |format|
       if @contact.update_attributes(params[:contact])
-        format.html { redirect_to(@contact) }
+        format.html { redirect_to(@contact, :notice => 'Contact was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
